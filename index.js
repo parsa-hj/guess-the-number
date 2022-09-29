@@ -11,10 +11,13 @@ btn.addEventListener('click', function() {
     } 
     else if (input < number && input>1) {
         output.innerHtml = "You guessed too low!";
-    };
-
-    if (input > number && input<100) {
-        output.innerHtml = "You guessed too high!";
     }
+    else if (input > number && input<100) {
+        output.innerHtml = "You guessed too high!";
+    } 
+    else{
+        output.innerHTML= "Lowe, it has to be between 1 and 100";
+    }
+
 });
 
